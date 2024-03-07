@@ -55,7 +55,7 @@
                         <a class="header__phone" href="tel:+7 (343) 310-17-42">+7 (343) 310-17-42</a>
                         <a class="header__phone" href="tel:+7 (902) 871-16-01">+7 (902) 871-16-01</a>
                     </div>
-                    <button class="header__btn btn btn-blue">
+                    <button class="header__btn btn btn-blue" data-fancybox data-src="#popup-call">
                         <span>Обратный звонок</span>
                     </button>
                 </div>
@@ -73,7 +73,7 @@
 								<p>систем вентиляции и холодоснабжения</p>
 								<div class="main-section__text">от ведущих Европейских брендов под ключ в РФ и СНГ</div>
 								<div class="main-section__group">
-									<button class="main-section__btn btn btn-blue">
+									<button class="main-section__btn btn btn-blue" data-fancybox data-src="#order">
 										<span>Выслать КП</span>
 										<i>
 											<img loading="lazy" src="img/main-btn__img.webp" alt="">
@@ -461,6 +461,9 @@
 					<div class="quiz__img8">
 						<img loading="lazy" src="img/quiz-img3.webp" alt="">
 					</div>
+					<div class="quiz__img9">
+						<img loading="lazy" src="img/quiz-img5.webp" alt="">
+					</div>
 				</section>
 			</div>
 			<section class="catalog">
@@ -472,12 +475,12 @@
 						<p class="subtitle">опт и розница с доставкой из Европы от 30 дней</p>
 						<div class="catalog__cards left-anim _anim-items anim-no-hide">
 							<div class="catalog-card">
-								<div class="catalog-card__img">
+								<div class="catalog-card__img catalog-card__img2">
 									<img loading="lazy" src="img/catalog-card__img.webp" alt="">
 								</div>
 								<div class="catalog-card__desc">
 									<div class="catalog-card__title">Контроллеры</div>
-									<button class="catalog-card__btn btn">
+									<button class="catalog-card__btn btn btn-white">
 										<span>Выбрать модель и уточнить цену</span>
 									</button>
 								</div>
@@ -488,7 +491,7 @@
 								</div>
 								<div class="catalog-card__desc">
 									<div class="catalog-card__title">Вентиляторы</div>
-									<button class="catalog-card__btn btn">
+									<button class="catalog-card__btn btn btn-white">
 										<span>Выбрать модель и уточнить цену</span>
 									</button>
 								</div>
@@ -499,7 +502,7 @@
 								</div>
 								<div class="catalog-card__desc">
 									<div class="catalog-card__title">Чиллеры</div>
-									<button class="catalog-card__btn btn">
+									<button class="catalog-card__btn btn btn-white">
 										<span>Выбрать модель и уточнить цену</span>
 									</button>
 								</div>
@@ -510,7 +513,7 @@
 								</div>
 								<div class="catalog-card__desc">
 									<div class="catalog-card__title">Компрессоры</div>
-									<button class="catalog-card__btn btn">
+									<button class="catalog-card__btn btn btn-white">
 										<span>Выбрать модель и уточнить цену</span>
 									</button>
 								</div>
@@ -521,7 +524,7 @@
 								</div>
 								<div class="catalog-card__desc">
 									<div class="catalog-card__title">Фанкойлы</div>
-									<button class="catalog-card__btn btn">
+									<button class="catalog-card__btn btn btn-white">
 										<span>Выбрать модель и уточнить цену</span>
 									</button>
 								</div>
@@ -643,7 +646,7 @@
 						</div>
 						<div class="designing__info">
 							<div class="designing__text2">Воспользуйтесь консультацией специалиста, чтобы просчитать и получить проект</div>
-							<button class="designing__btn btn">
+							<button class="designing__btn btn btn-white" data-fancybox data-src="#order">
 								<span>Консультация</span>
 							</button>
 						</div>
@@ -871,7 +874,7 @@
 									<div class="advantages2__group">
 										<div class="advantages2__name">Санатин Алексей Геннадьевич</div>
 										<div class="advantages2__post">Генеральный директор РВН-Урал</div>
-										<a class="advantages2__link" href="">
+										<a class="advantages2__link" href="mailto:rb_ural@inbox.ru">
 											<span>Написать письмо в компанию</span>
 											<i>
 												<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1214,6 +1217,9 @@
 								</form>
 							</div>
 						</div>
+						<div class="connection__img2">
+							<img src="img/connection-img.webp" alt="">
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1257,7 +1263,7 @@
                             <a class="footer-top__phone" href="tel:+7 (343) 310-17-42">+7 (343) 310-17-42</a>
                             <a class="footer-top__phone" href="tel:+7 (902) 871-16-01">+7 (902) 871-16-01</a>
                         </div>
-                        <button class="footer-top__btn btn btn-blue">
+                        <button class="footer-top__btn btn btn-blue" data-fancybox data-src="#popup-call">
                             <span>Обратный звонок</span>
                         </button>
                     </div>
@@ -1288,6 +1294,56 @@
 </footer>
 
 	</div>
+
+	<div class="popups">
+		<div id="popup-call" class="popup">
+			<div class="form">
+				<div class="form-head">Обратная связь</div>
+				<form method="POST" action="" class="form_block">
+					<div class="form-field form-group">
+						<label>Ваше имя</label>
+						<input type="text" name="name1" placeholder="Например Иван" class="form-control " data-validation="valid">
+					</div>
+					<div class="form-field form-group">
+						<label>Ваш номер</label>
+						<input type="tel" name="phone" placeholder="" class="form-control required  inp" data-validation="invalid">
+					</div>
+					<button type="submit" name="send" class="form-btn btn btn-blue disabled">
+						<span>Оставьте заявку</span>
+					</button>
+					<div class="agreement-check">
+						<input class="agreement" type="checkbox" checked="checked" name="Agreement" data-validation="valid">
+						<label class="agreement-label label-none">Подтверждаю свои данные и даю своё согласие на их обработку.</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popups">
+		<div id="order" class="popup">
+			<div class="form">
+				<div class="form-head">Обратная связь</div>
+				<form method="POST" action="" class="form_block">
+					<div class="form-field form-group">
+						<label>Ваше имя</label>
+						<input type="text" name="name1" placeholder="Например Иван" class="form-control " data-validation="valid">
+					</div>
+					<div class="form-field form-group">
+						<label>Ваш номер</label>
+						<input type="tel" name="phone" placeholder="" class="form-control required  inp" data-validation="invalid">
+					</div>
+					<button type="submit" name="send" class="form-btn btn btn-blue disabled">
+						<span>Оставьте заявку</span>
+					</button>
+					<div class="agreement-check">
+						<input class="agreement" type="checkbox" checked="checked" name="Agreement" data-validation="valid">
+						<label class="agreement-label label-none">Подтверждаю свои данные и даю своё согласие на их обработку.</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/base.min.js"></script>
 <script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/validate.min.js"></script>
 <script src="js/main.min.js"></script>
